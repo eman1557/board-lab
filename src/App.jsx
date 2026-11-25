@@ -11,7 +11,7 @@ function App() {
     <main>
       <div className="panel header">
         <div>
-          <h1>board-lab</h1>
+          <h1>asdf</h1>
           <Header />
         </div>
         <button onClick={() => setShowList(!showList)}>

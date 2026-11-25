@@ -1,4 +1,4 @@
-const BASE_URL = 'https://board-lab-back.minq.live';
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 async function request(path, options) {
   const response = await fetch(`${BASE_URL}${path}`, options);
