@@ -17,6 +17,9 @@ function QuickView() {
     setSelectedId(input);
   }
 
+  const selected = posts.find((post) => post.id === selectedId);
+    {selectedId !== null && <p>{selected ? selected.title : '없는 글입니다'}</p>}
+
   return (
     <Panel title="글 번호로 바로 보기">
       <form className="form-row" onSubmit={handleSubmit}>
